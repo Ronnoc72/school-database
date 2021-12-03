@@ -23,7 +23,8 @@ CREATE TABLE students (
   name VARCHAR(150) NOT NULL,
   age INT DEFAULT 0,
   major VARCHAR(50) NOT NULL,
-  current_course VARCHAR(50) NOT NULL
+  current_course INT NOT NULL,
+  FOREIGN KEY(course_id) REFERENCES courses(id)
 );
 
 CREATE TABLE certificates (
@@ -32,3 +33,4 @@ CREATE TABLE certificates (
   courses VARCHAR(200) NOT NULL,
   graduated INT DEFAULT 0
 );
+
