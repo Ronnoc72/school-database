@@ -6,7 +6,7 @@ CREATE TABLE courses (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
   description VARCHAR(200) NOT NULL,
-  course_num INT NOT NULL
+  course_num INT NOT NULL UNIQUE
 );
 
 CREATE TABLE staff (
